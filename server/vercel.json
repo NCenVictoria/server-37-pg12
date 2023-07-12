@@ -1,5 +1,11 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
   
     "env": {
       "DB_HOST": "localhost",
@@ -11,7 +17,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server/index.js"
+        "dest": "index.js"
       }
     ]
   }
