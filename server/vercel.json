@@ -1,7 +1,13 @@
 {
     "version": 2,
   
-   
+    "env": {
+      "DB_HOST": "localhost",
+      "DB_PORT": "5432",
+      "DB_USER": "postgres",
+      "DB_PASSWORD": "Rokaleta2",
+      "DB_DATABASE": "elite"
+    },
     "routes": [
       {
         "src": "/(.*)",
